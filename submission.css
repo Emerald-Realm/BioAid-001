@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    color: blue;
+    font-size: 0.95em;
+}
+
+body {
+    width: 320px;
+    margin: auto;
+}
+
+header {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    padding: 0.1em 0.5em;
+    flex: 1;
+}
+
+#logo #bio {
+    font-style: italic;
+    color: red;
+    font-size: 2em;
+}
+
+#logo #aid {
+    color: rgb(13, 174, 223);
+    font-size: 1.5em;
+}
+
+nav{
+    flex: 1;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 0;
+}
+
+/* header*/
+
+main {
+    border: 1px sold;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#wrapper{
+    letter-spacing: 0px;
+}
+
+#wrapper a {
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: bold;
+    color: red;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    body {
+        width: 500px
+    }
+}

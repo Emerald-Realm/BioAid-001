@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-size: 1.4vw;
+    border: none;
+}
+
+a {
+    /* border: 0.1vw solid black; */
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+    color: rgb(160, 159, 159);
+    text-decoration: none;
+    font-size: 1.2vw;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: black;
+}
+
+
+ul {
+    list-style: none;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    justify-self: center;
+}
+
+li {
+    align-self: center;
+    justify-self: center;
+}
+
+body {
+    padding: 1vw;
+    width: 80%;
+    margin: auto;
+}
+
+
+/* header */
+header {
+    display: flex;
+    border-bottom: 0.1vw solid black;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+#logo {
+    flex: 1;
+}
+
+.bold {
+    font-size: large;
+}
+
+.bio {
+    color: blue;
+}
+
+.aid {
+    color: red;
+}
+
+.nav-list {
+    flex: 1;
+    padding: 0px;
+    margin: 0px;
+}
+
+#home,
+#sign-in,
+#sign-up {
+    transition: all 0.5s ease;
+}
+
+#sign-in {
+    font-weight: bold;
+}
+
+#home:hover,
+#sign-in:hover,
+#sign-up:hover {
+    font-weight: bold;
+}
+
+/* wrapper-start */
+
+main {
+    width: 80%;
+    margin-top: 2vw;
+    border: 2px solid blue;
+    padding: 1vw;
+    background-color: rgb(250, 248, 248);
+    color: rgb(112, 109, 210);
+}
+
+#instruct {
+    padding: 2rem 0rem;
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    padding: 0.5vw 0vw;
+}
+
+.text-input {
+    width: 100%;
+    padding: 0.6vw;
+    border-radius: 0.5vw;
+    border: 0.1vw solid rgb(179, 179, 179);
+}
+
+button {
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    padding: 0.5vw 1vw;
+    background-color: none;
+    color: blue;
+    border-radius: 0.4vw;
+    border: 0.1vw solid blue;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+button:hover {
+    color: white;
+    background-color: blue;
+}
+
+.links {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vw;
+}
+
+.links a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#alt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#alt hr {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: grey;
+}
+
+#alt p {
+    padding: 0rem 0.5rem;
+}
+
+#with-icon {
+    align-self: center;
+}
+
+#with-icon ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+}
+
+#with-icon a {
+    text-decoration: none;
+    padding: 0.5rem;
+
+}
+
+footer {
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    #wrapper {
+        width: 500px;
+        margin: auto;
+    }
+
+    nav {
+        flex: 0.5;
+    }
+}
+
+@media (max-width: 800px) {
+    body{
+        width: 300px;
+    }
+
+    *{
+        padding: 1vw 0vw;
+        font-size: 2vw;
+    }
+    
+    a{
+        font-size: 2vw;
+    }
+
+    #alt{
+        opacity: 0;
+    }
+
+    #wrapper{
+        align-self: center;
+        justify-self: center;
+        width: 90%;
+        margin: auto;
+        font-size: 2vw;
+    }
+
+    main{
+        margin: auto;
+        margin-top: 5vw;
+    }
+    nav {
+        flex: 1;
+    }
+
+    #with-icon {
+        border: 2px solid white;
+    }
+
+    #with-icon ul {
+        padding: 0rem;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    #with-icom ul li {
+        padding: 0rem;
+    }
+
+    #with-icon ul li a {
+        padding: 0rem;
+    }
+}
