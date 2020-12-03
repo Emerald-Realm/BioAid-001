@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-size: 1.4vw;
+    border: none;
+}
+
+
+a {
+    /* border: 0.1vw solid black; */
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+    color: rgb(160, 159, 159);
+    text-decoration: none;
+    font-size: 1.2vw;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: black;
+}
+
+
+
+ul {
+    list-style: none;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+img {
+    width: 50vw;
+    padding: 5vw;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*  body */
+body{
+    width: 90%;
+    margin: auto;
+    padding: 1vw;
+}
+/* header */
+header {
+    display: flex;
+    border-bottom: 0.1vw solid black;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+#logo {
+    flex : 1;
+}
+
+.bold{
+    font-size: large;
+}
+
+.bio{
+    color: blue;
+}
+.aid{
+    color: red;
+}
+
+.nav-list {
+    flex: 1;
+    padding: 0px;
+    margin: 0px;
+}
+#home, #sign-in, #sign-up {
+    transition: all 1s ease;
+}
+
+#home {
+    font-weight: bold;
+}
+
+#home:hover, #sign-in:hover, #sign-up:hover{
+    color: royalblue;
+    font-weight: bold;
+}
+
+/* main */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article{
+    display: grid;
+    gap: 1vw;
+    padding: 10vw;
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+}
+
+#quote {
+    font-size: 1.3vw;
+    color: slategrey;
+    text-align: center;
+}
+
+.exam {
+    font-size: 1.5vw;
+    color: blue;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid blue;
+    padding: 1vw 2vw;
+    background-color: none;
+    transition: 1s all ease-in-out;
+}
+
+.exam:hover {
+    color: white;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    padding: 1vw 2vw;
+    background-color: blue;
+}
+
+/* footer */
+footer{
+    text-align: center;
+}
